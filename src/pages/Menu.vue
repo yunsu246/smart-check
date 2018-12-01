@@ -1,7 +1,7 @@
 <template>
   <v-ons-page modifier="white">
     <div class="profile-pic">
-      <img src="../assets/vue-onsenui.png">
+      <img src="../assets/vue.png">
     </div>
 
     <v-ons-list-title>Access</v-ons-list-title>
@@ -84,16 +84,16 @@ export default {
       ],
       access: [
         {
-          title: 'Home',
-          icon: 'ion-home, material:md-home'
+          title: 'Class',
+          icon: 'ion-ios-pricetags, material:ion-ios-pricetags'
         },
         {
-          title: 'Forms',
-          icon: 'ion-edit, material:md-edit'
+          title: 'Email',
+          icon: 'ion-ios-email, material:ion-ios-email'
         },
         {
-          title: 'Animations',
-          icon: 'ion-film-marker, material: md-movie-alt'
+          title: 'Settings',
+          icon: 'ion-android-settings, material:ion-android-settings'
         }
       ]
     };
@@ -108,6 +108,11 @@ export default {
   border-bottom: 1px solid #DDD;
   color: rgba(0, 0, 0, .56);
   padding-bottom: 8px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .page--material .profile-pic {
   background-color: #f6f6f6;

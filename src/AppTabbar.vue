@@ -22,52 +22,50 @@
 </template>
 
 <script>
-import Camera from './pages/Camera.vue';
-import Home from './pages/Home.vue';
-import Forms from './pages/Forms.vue';
-import Animations from './pages/Animations.vue';
+import Participant from './pages/Participant.vue';
+import Email from './pages/Email.vue';
+import Class from './pages/Class.vue';
+import Information from './pages/Information.vue';
 
 // Just a linear interpolation formula
 const lerp = (x0, x1, t) => parseInt((1 - t) * x0 + t * x1, 10);
 // RGB colors
-const red = [244, 67, 54];
-const blue = [30, 136, 229];
-const purple = [103, 58, 183];
+const green = [26, 188, 156];
 
 export default {
   data () {
     return {
       shutUp: !this.md,
       showingTip: false,
-      colors: red,
+      colors: green,
       animationOptions: {},
       topPosition: 0,
       tabs: [
         {
-          label: this.md ? null : 'Camera',
-          icon: 'ion-camera, material:md-camera',
-          page: Camera,
-          theme: red,
+          label: this.md ? null : 'Participant',
+          icon: 'ion-android-people, material:ion-android-people',
+          page: Participant,
+          theme: green,
           style: this.md ? { maxWidth: '60px' } : {},
           top: -105 // Toolbar + Tabbar heights
         },
         {
-          label: 'Forms',
-          icon: this.md ? null : 'ion-edit',
-          page: Forms,
-          theme: blue
+          label: this.md ? null : 'Class',
+          icon: 'ion-ios-pricetags, material:ion-ios-pricetags',
+          page: Class,
+          theme: green
         },
         {
-          label: 'Home',
-          icon: this.md ? null : 'ion-home',
-          page: Home,
-          theme: red
+          label: this.md ? null : 'Email',
+          icon: 'ion-ios-email, material:ion-ios-email',
+          page: Email,
+          theme: green
         },
         {
-          label: 'Anim',
-          icon: this.md ? null : 'ion-film-marker',
-          page: Animations,
-          theme: purple
+          label: this.md ? null : 'Settings',
+          icon: 'ion-android-settings, material:ion-android-settings',
+          page: Information,
+          theme: green
         }
       ]
     };
@@ -88,7 +86,7 @@ export default {
         this.showingTip = true;
         this.$ons.notification.toast({
           message,
-          buttonLabel: 'Shut up!',
+          buttonLabel: 'Close!',
           timeout: 2000
         }).then(i => {
           this.shutUp = i === 0;
@@ -108,7 +106,7 @@ export default {
       }
     },
     title() {
-      return this.md ? 'Onsen UI' : this.tabs[this.index].title || this.tabs[this.index].label;
+      return this.md ? 'Smart Check' : this.tabs[this.index].title || this.tabs[this.index].label;
     },
     swipeTheme() {
       return this.md && {
