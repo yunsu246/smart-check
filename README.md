@@ -1,16 +1,19 @@
-# Vue Onsen UI Kitchen Sink
-
-This is a sample app featuring **Onsen UI 2 + Vue**. This version uses **Vuex** to share the state among components.
-
-> A version **without Vuex** is provided in [`no-vuex` branch](https://github.com/onsenui/vue-onsenui-kitchensink/tree/no-vuex).
-
-**Check out the [preview here](https://onsenui.github.io/vue-onsenui-kitchensink/)**.
-
-This project has been created with [vue-cli](https://github.com/vuejs/vue-cli) and [webpack-simple](https://github.com/vuejs-templates/webpack-simple) template. Webpack configuration has been modified to work with Onsen UI +2.2.0.
-
-## About CSS
-
-Onsen UI bundles `css/onsen-css-components.css` wich can be directly included in an app. However, this example uses the source `css-components-src/src/onsen-css-components.css` where colors can be easily modified. In order to support this, [`postcss-cssnext`](https://github.com/MoOx/postcss-cssnext) must be used in Webpack.
+## Project Info
+ 1. 이름: Smart Check
+ 2. 내용 : Blockchain을 활용한 출결관리 dApp
+    - 핵심기능
+      - Smart Contract를 활용한 _출석부_ 생성 및 관리
+      - 수업별 출결 현황 조회 
+      - 참여자별 해당 수업에 대한 출석여부 확인  
+    - 구현형태 : Hybrid App
+    - 주요 리소스 및 아키텍쳐
+      - Front-End : Vue.js, OnsenUI 
+      - Back-End : Web3, Flask(Python) 
+      - 이외: AWS, Docker
+    - 블록체인 네트워크 구성
+      - Network type : Private Network(KALEIDO)
+      - Consensus algorithm : PoA
+      - Core : [go-ethereum](https://github.com/ethereum/go-ethereum)
 
 
 ## Build Setup
@@ -19,7 +22,7 @@ Onsen UI bundles `css/onsen-css-components.css` wich can be directly included in
 # install dependencies
 yarn install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:7000
 yarn run dev
 
 # build for production with minification
