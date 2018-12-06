@@ -30,12 +30,12 @@ class SmartCheck():
         self.contract_instance.createStudent(studId, age, fName, lName, transact={'from': self.w3.eth.accounts[0]})
 
     def _getParticularStudent(self, studId):
-        _studId, _age, _fName, _lName = self.contract_instance.getParticularStudent(studId)
+        _fName, _lName, _age, _attendanceValue = self.contract_instance.getParticularStudent(studId)
         return {
-            "studId": _studId,
-            "age": _age,
             "fName": _fName.decode('utf-8'),
             "lName": _lName.decode('utf-8'),
+            "age": _age,
+            "attendanceValue": _attendanceValue,
         }
 
     def _getStudents(self):
