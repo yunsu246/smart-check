@@ -34,5 +34,15 @@ export default {
   fetchSecureResource () {
     return HTTP.get(`secure-resource/zzz`)
       .then(response => response.data)
+  },
+
+  fetchSecureResourceContract (email, className) {
+    return HTTP.get(`secure-resource/contract`, {
+      params: {
+          email: email,
+          className: className
+      }
+    })
+      .then(response => response.data)
   }
 }

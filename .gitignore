@@ -1,6 +1,8 @@
 .DS_Store
+.py-solc
 node_modules/
 dist/
 npm-debug.log
 yarn-error.log
+SmartCheck.json
 zappa_settings.json

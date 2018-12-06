@@ -50,7 +50,7 @@
           <div>{{email}}</div>
           
           <p style="text-align: center">
-            <v-ons-button @click="dialogVisible = false">
+            <v-ons-button @click.prevent="fetchSecureResourceContract">
               CONFIRM
             </v-ons-button>
           </p>
@@ -63,6 +63,7 @@
 
 <script>
 import QrcodeVue from 'qrcode.vue';
+import $backend from '../backend'
 
 export default {
   data () {
@@ -73,6 +74,19 @@ export default {
       size: 150
     };
   },
+
+  methods: {
+    fetchSecureResourceContract () {
+      $backend.fetchSecureResourceContract(this.email, this.className)
+        .then(responseData => {
+          this.resources.push(responseData)
+        }).catch(error => {
+          this.error = error.message
+        })
+      this.dialogVisible = false  
+    }
+  },
+
   components: {
     QrcodeVue
   }
