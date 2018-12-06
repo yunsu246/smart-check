@@ -8,6 +8,10 @@ gunicorn = "==19.7.1"
 flask-restplus = "*"
 python-dotenv = "*"
 flask = "*"
+web3 = "==4.8.2"
+py-solc = "*"
+zappa = "*"
+flask-cors = "*"
 
 [dev-packages]
 pytest = "*"
@@ -17,3 +21,6 @@ pytest-cov = "*"
 
 [requires]
 python_version = "3.6"
+
+[pipenv]
+allow_prereleases = true

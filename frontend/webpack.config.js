@@ -24,7 +24,7 @@ module.exports = {
   watch: process.env.WEBPACK_WATCH === 'true',
   entry: ['babel-polyfill', './src/main.js'],
   output: {
-    path: path.resolve(__dirname, './www'),
+    path: path.resolve(__dirname, './dist'),
     publicPath: '',
     filename: 'build.js'
   },
@@ -100,9 +100,11 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     noInfo: true,
-    proxy: {
-      "/api": "http://localhost:5000"
-    }
+    host: '0.0.0.0',
+    allowedHosts: [
+      'smartcheck.ml',
+      '.smartcheck.ml'
+    ]
   },
   performance: {
     hints: false

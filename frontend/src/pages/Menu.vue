@@ -64,12 +64,12 @@ export default {
         {
           title: 'Github',
           icon: 'ion-social-github',
-          url: 'https://github.com/OnsenUI/OnsenUI'
+          url: 'https://github.com/yunsu246/smart-check'
         },
         {
           title: 'Code',
           icon: 'ion-code',
-          url: 'https://github.com/OnsenUI/vue-onsenui-kitchensink'
+          url: 'https://github.com/OnsenUI/OnsenUI'
         },
         {
           title: 'Forum',

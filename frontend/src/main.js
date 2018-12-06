@@ -7,7 +7,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import VueOnsen from 'vue-onsenui'; // For UMD
 // import VueOnsen from 'vue-onsenui/esm'; // For ESM
-// import * as OnsenComponents from './onsen-components'; // For ESM
+// import * as OnsenComponents from './onsen-components'; // For ESMz
 import VueQrcodeReader from 'vue-qrcode-reader'
 import storeLike from './store.js';
 import CustomToolbar from './partials/CustomToolbar.vue';

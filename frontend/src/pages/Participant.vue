@@ -34,7 +34,6 @@ export default {
     return {
       resources: [],
       error: '',
-      
       result: '',
       facingMode: REAR_CAMERA,
       noFrontCamera: false,
