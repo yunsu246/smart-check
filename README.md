@@ -11,10 +11,6 @@
       - Blockchain Network: AWS(EC2, ECS Cluster)
       - Front-End : Vue.js, OnsenUI, Javascript, CSS
       - Back-End : Flask, Zappa, Web3.py, Python
-    - 블록체인 네트워크 구성
-      - Network type : Private Network(KALEIDO)
-      - Consensus algorithm : PoA
-      - Core : [go-ethereum](https://github.com/ethereum/go-ethereum)
 
 ## Prerequsite
 - OS: Ubuntu 18.04.1 LTS
