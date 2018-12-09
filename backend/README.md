@@ -24,10 +24,10 @@ pipenv lock --pre --clear --verbose
 python run.py
 ```
 
-## Deploy
+## Deploy (with Zappa)
 
 ``` bash
-# initialize serverless framework(Zappa)
+# initialize serverless framework
 zappa init
 
 # deploy 
