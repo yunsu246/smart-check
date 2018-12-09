@@ -23,3 +23,16 @@ pipenv lock --pre --clear --verbose
 # serve at localhost:5000
 python run.py
 ```
+
+## Deploy
+
+``` bash
+# initialize serverless framework(Zappa)
+zappa init
+
+# deploy 
+zappa deploy dev
+
+# update
+zappa update dev
+```
