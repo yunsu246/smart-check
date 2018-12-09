@@ -15,19 +15,16 @@
       - Consensus algorithm : PoA
       - Core : [go-ethereum](https://github.com/ethereum/go-ethereum)
 
-
-## Build Setup
-
-``` bash
-# install dependencies
-yarn install
-
-# serve with hot reload at localhost:7000
-yarn run dev
-
-# build for production with minification
-yarn run build
-```
+## Prerequsite
+- OS: Ubuntu 18.04.1 LTS
+- NPM : https://nodejs.org
+- YARN : https://yarnpkg.com/lang/en/
+- PIPENV : https://github.com/pypa/pipenv
+- WEB3.PY : https://github.com/ethereum/web3.py
+  
+- IDE: (eg. Intelij, Eclipse, WinStorm, Visual Studio etc.)
+- (Optional) IDE에 맞는 Solidity 플러그인 추가 
+- Metamask : https://metamask.io/
 
 ## Licensing
 
