@@ -11,6 +11,8 @@
       - Blockchain Network: AWS(EC2, ECS Cluster)
       - Front-End : Vue.js, OnsenUI, Javascript, CSS
       - Back-End : Flask, Zappa, Web3.py, Python
+      
+![](https://github.com/yunsu246/smart-check/blob/master/docs/Smart-Check%20Architecture.png)
 
 ## Prerequsite
 - OS: Ubuntu 18.04.1 LTS
