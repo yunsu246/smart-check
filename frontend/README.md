@@ -1,4 +1,4 @@
-## Backend API info
+## Frontend DEMO
 https://frontend.smartcheck.ml
 
 ## Build Setup
