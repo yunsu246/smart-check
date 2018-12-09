@@ -7,9 +7,10 @@
       - 참여자별 해당 수업에 대한 출석여부 확인  
     - 구현형태 : Hybrid App
     - 주요 리소스 및 아키텍쳐
-      - Front-End : Vue.js, OnsenUI 
-      - Back-End : Web3, Flask(Python) 
-      - 이외: AWS, Docker
+      - Serverless: AWS(S3, Route53, Certificate Manager, CloudFront, Lambda, API Gateway)
+      - Blockchain Network: AWS(EC2, ECS Cluster)
+      - Front-End : Vue.js, OnsenUI, Javascript, CSS
+      - Back-End : Flask, Zappa, Web3.py, Python
     - 블록체인 네트워크 구성
       - Network type : Private Network(KALEIDO)
       - Consensus algorithm : PoA
