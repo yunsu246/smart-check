@@ -11,7 +11,7 @@
     "deploy": "npm run build && aws s3 sync ./dist s3://smartcheck.ml"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "gh-pages": "^1.2.0",
     "onsenui": "^2.10.2",
     "qrcode.vue": "^1.6.1",
